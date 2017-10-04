@@ -1,0 +1,10 @@
+{
+  "name": "nodejs-formation",
+  "version": "0.0.0",
+  "private": true,
+  "dependencies": {
+    "elasticsearch": "12.1.3",
+    "express": "^4.16.0",
+    "socket.io": "~1.3.2"
+  }
+}

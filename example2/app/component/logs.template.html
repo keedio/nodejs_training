@@ -1,0 +1,74 @@
+
+<div class="row row-cards-pf">
+	<div class="col-md-12">
+		<div class="card-pf card-pf-utilization" style="">
+			<div class="card-pf-heading">
+				<p class="card-pf-heading-details"></p>
+				<h2 class="card-pf-title" style="">Real Time</h2>
+			</div>
+			<div class="card-pf-body" style="">
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-md-12">
+						<div id="log-linechart"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="col-md-6">
+		<div class="card-pf card-pf-utilization" style="">
+			<div class="card-pf-heading">
+				<p class="card-pf-heading-details"></p>
+				<h2 class="card-pf-title" style="">Single Promise <a ng-click="$ctrl.getHostNames()"> <span class="fa fa-refresh"></span> </a></h2>
+			</div>
+			<div class="card-pf-body" style="">
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-md-12">
+						<div id="barchart-error"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="col-md-6">
+		<div class="card-pf card-pf-utilization" style="">
+			<div class="card-pf-heading">
+				<p class="card-pf-heading-details"></p>
+				<h2 class="card-pf-title" style="">Promise All  <a ng-click="$ctrl.getTotalByService()"> <span class="fa fa-refresh"></span> </a></h2>
+			</div>
+			<div class="card-pf-body" style="">
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-md-12">
+						<div class="card-pf card-pf-accented card-pf-aggregate-status">
+							<h2 class="card-pf-title">
+								Total Flume
+							</h2>
+							<div class="card-pf-body">
+								<p class="card-pf-aggregate-status-notifications">
+									<span class="card-summary disabled-flash"> {{$ctrl.totalService1}} </span>
+
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="card-pf-body" style="">
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-md-12">
+						<div class="card-pf card-pf-accented card-pf-aggregate-status">
+							<h2 class="card-pf-title">
+								Total Zookeeper
+							</h2>
+							<div class="card-pf-body">
+								<p class="card-pf-aggregate-status-notifications">
+									<span class="card-summary disabled-flash"> {{$ctrl.totalService2}} </span>
+
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
