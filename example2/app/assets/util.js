@@ -16,6 +16,29 @@ function insertMissingLogData (data){
 	return data;
 }
 
+function insertMissingData(data) {
+    var keys = [ 'error', 'info', 'warn' ];
+    var contains = false;
+    for (var k in keys) {
+        contains = false;
+        jQuery.each(data, function(i, loglevel) {
+            if (keys[k] == loglevel.key) {
+                contains = true;
+                return;
+            }
+
+        });
+        if (!contains) data.push({
+            'key' : keys[k],
+            'hostname' : {
+                'buckets' : []
+            }
+        });
+    }
+
+    return data;
+}
+
 function generateBarChart(values, hostnames, loglevel) {
     var c3ChartDefaults = $().c3ChartDefaults();
 
